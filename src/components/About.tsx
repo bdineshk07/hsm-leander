@@ -47,7 +47,7 @@ export default function About() {
           <div className="relative">
             <div className="absolute inset-0 bg-[#d4af37]/10 rounded-lg transform rotate-3"></div>
             <img
-  src={about}
+  src='https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=800'
   alt="Traditional Clay Matka"
   className="relative rounded-lg border-2 border-[#d4af37]/30"
   style={{
