@@ -1,3 +1,4 @@
+import SEO from '../components/SEO';
 import { Phone, Mail, ChefHat, MessageCircle } from "lucide-react";
 import catering1 from "../images/live catering setup.jpg"
 import catering2 from "../images/indian catering food.jpg"
@@ -19,86 +20,92 @@ const cateringFormUrl =
 
 export default function CateringPage() {
   return (
-    <section className="relative py-24 sm:py-12 bg-[#0B132B]"  style={sectionBgStyle}>
-      <div className="max-w-7xl mx-auto px-4">
+    <>
+      <SEO
+        title="Live Catering Services | Hyderabadi Spicy Matka"
+        description="Bring authentic Hyderabadi flavors to your special events! Our live catering service delivers freshly prepared Indian dishes and an unforgettable culinary experience."
+      />
+      <section className="relative py-24 sm:py-12 bg-[#0B132B]" style={sectionBgStyle}>
+        <div className="max-w-7xl mx-auto px-4">
 
-        {/* Header */}
-        <div className="text-center mb-16">
-          <ChefHat className="mx-auto text-[#d4af37] mb-4" size={60} />
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-[#d4af37] mb-6">
-            Live Catering Services
-          </h1>
-          <p className="text-xl text-[#f5f5dc] max-w-3xl mx-auto leading-relaxed">
-            Bring the authentic flavors of Hyderabad to your special events.
-            Our live catering service delivers freshly prepared dishes,
-            professional service, and an unforgettable culinary experience
-            for every occasion.
-          </p>
-        </div>
+          {/* Header */}
+          <div className="text-center mb-16">
+            <ChefHat className="mx-auto text-[#d4af37] mb-4" size={60} />
+            <h1 className="text-5xl md:text-6xl font-serif font-bold text-[#d4af37] mb-6">
+              Live Catering Services
+            </h1>
+            <p className="text-xl text-[#f5f5dc] max-w-3xl mx-auto leading-relaxed">
+              Bring the authentic flavors of Hyderabad to your special events.
+              Our live catering service delivers freshly prepared dishes,
+              professional service, and an unforgettable culinary experience
+              for every occasion.
+            </p>
+          </div>
 
-        {/* Photos */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-20">
-          <img src= {catering1} alt="Live Catering Setup" className="rounded-lg object-cover h-64 w-full" />
-          <img src={catering2} alt="Indian Catering Food" className="rounded-lg object-cover h-64 w-full" />
-          <img src={catering3} alt="Event Catering" className="rounded-lg object-cover h-64 w-full" />
-        </div>
+          {/* Photos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-20">
+            <img src={catering1} alt="Live Catering Setup" className="rounded-lg object-cover h-64 w-full" />
+            <img src={catering2} alt="Indian Catering Food" className="rounded-lg object-cover h-64 w-full" />
+            <img src={catering3} alt="Event Catering" className="rounded-lg object-cover h-64 w-full" />
+          </div>
 
-         {/* Contact Info */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif font-bold text-[#d4af37] mb-6">
-            Contact Us for Catering
-          </h2>
+          {/* Contact Info */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-serif font-bold text-[#d4af37] mb-6">
+              Contact Us for Catering
+            </h2>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-6 text-xl">
+            <div className="flex flex-col sm:flex-row justify-center gap-6 text-xl">
+              <a
+                href="tel:+17373406589"
+                className="flex items-center gap-2 text-[#d4af37] hover:text-[#e6c158]"
+              >
+                <Phone /> +1 512-456-0273
+              </a>
+              {/* WhatsApp Link */}
+              <a
+                href="https://wa.me/17373406589"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[#d4af37] hover:text-[#e6c158] transition-colors"
+              >
+                {/* If using Lucide icons, you can use MessageSquare or MessageCircle */}
+                <MessageCircle /> +1 737-340-6589
+              </a>
+              <a
+                href="mailto:Hsmaustin.Leander@gmail.com"
+                className="flex items-center gap-2 text-[#d4af37] hover:text-[#e6c158]"
+              >
+                <Mail /> hsmaustin.leander@gmail.com
+              </a>
+            </div>
+          </div>
+
+
+
+
+          {/* Google Form CTA */}
+          <div className="max-w-3xl mx-auto text-center bg-[#0f1d33]/70 border border-[#d4af37]/40 rounded-lg p-10">
+            <h3 className="text-3xl font-serif font-bold text-[#d4af37] mb-4">
+              Request a Catering Quote
+            </h3>
+            <p className="text-lg text-[#f5f5dc] mb-8">
+              Fill out our catering request form and our team will get back to you
+              promptly with availability and pricing.
+            </p>
+
             <a
-              href="tel:+17373406589"
-              className="flex items-center gap-2 text-[#d4af37] hover:text-[#e6c158]"
-            >
-              <Phone /> +1 512-456-0273
-            </a>
-            {/* WhatsApp Link */}
-            <a
-              href="https://wa.me/17373406589"
+              href={cateringFormUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[#d4af37] hover:text-[#e6c158] transition-colors"
+              className="inline-block bg-[#d4af37] text-[#0B132B] font-semibold px-8 py-4 rounded-lg hover:bg-[#e6c158] transition-all"
             >
-            {/* If using Lucide icons, you can use MessageSquare or MessageCircle */}
-              <MessageCircle  /> +1 737-340-6589
-            </a>
-            <a
-              href="mailto:Hsmaustin.Leander@gmail.com"
-              className="flex items-center gap-2 text-[#d4af37] hover:text-[#e6c158]"
-            >
-              <Mail /> hsmaustin.leander@gmail.com
+              Open Catering Request Form
             </a>
           </div>
-        </div> 
-        
 
-
-
-        {/* Google Form CTA */}
-        <div className="max-w-3xl mx-auto text-center bg-[#0f1d33]/70 border border-[#d4af37]/40 rounded-lg p-10">
-          <h3 className="text-3xl font-serif font-bold text-[#d4af37] mb-4">
-            Request a Catering Quote
-          </h3>
-          <p className="text-lg text-[#f5f5dc] mb-8">
-            Fill out our catering request form and our team will get back to you
-            promptly with availability and pricing.
-          </p>
-
-          <a
-            href={cateringFormUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#d4af37] text-[#0B132B] font-semibold px-8 py-4 rounded-lg hover:bg-[#e6c158] transition-all"
-          >
-            Open Catering Request Form
-          </a>
         </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

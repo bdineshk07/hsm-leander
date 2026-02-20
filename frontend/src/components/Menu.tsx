@@ -250,7 +250,7 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Flame, Star, Leaf, Drumstick, Clock } from 'lucide-react';
-import Footer from '../components/Footer';
+import Footer from './Footer';
 
 const menuData = {
   'Soups & Starters': [

@@ -1,6 +1,5 @@
+import SEO from '../components/SEO';
 import Hero from '../components/Hero';
-import VideoText from '../components/VideoText';
-import ProTips from '../components/ProTips';
 import Speciality from '../components/Speciality';
 import SignatureDishes from '../components/SignatureDishes';
 import Ambiance from '../components/Ambiance';
@@ -15,16 +14,20 @@ import BreakfastBuffetSection from "../components/BreakfastBuffetSection";
 export default function Home() {
   return (
     <>
+      <SEO
+        title="Hyderabadi Spicy Matka | Authentic Indian Restaurant Leander"
+        description="Experience the rich, authentic flavors of Hyderabad right here in Leander, TX. From fragrant dum biryanis to rich curries and tandoori specials."
+      />
       <Hero />
       {/* <VideoText /> */}
-      
+
       <Speciality />
       <SignatureDishes />
       <Ambiance />
       <BreakfastBuffetSection />
       <Testimonials />
       <Rating />
-      <DeliveryPartners/>
+      <DeliveryPartners />
     </>
   );
 }

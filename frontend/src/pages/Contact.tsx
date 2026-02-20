@@ -1,3 +1,4 @@
+import SEO from '../components/SEO';
 import Contact from '../components/Contact';
 
 /**
@@ -7,6 +8,10 @@ import Contact from '../components/Contact';
 export default function ContactPage() {
   return (
     <>
+      <SEO
+        title="Contact Us | Hyderabadi Spicy Matka"
+        description="Get in touch with Hyderabadi Spicy Matka located in Leander. Find our address, phone number, and hours of operation, or send us a message."
+      />
       <Contact />
     </>
   );
